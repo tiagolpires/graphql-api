@@ -1,5 +1,6 @@
 module.exports.types = `
     type Student {
+        id: ID!
         name: String!
         email: String!
         document: String!
@@ -7,5 +8,9 @@ module.exports.types = `
 `
 
 module.exports.queries = `
-    students: [Student]
+    students: [Student]!
+`
+
+module.exports.mutations = `
+    createStudent(name: String!, email: String!, document: String!): Student 
 `

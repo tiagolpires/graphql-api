@@ -4,4 +4,8 @@ module.exports = {
     Query: {
         students: StudentResolver.getStudents,
     },
+
+    Mutation: {
+        createStudent: StudentResolver.createStudent
+    }
 }
