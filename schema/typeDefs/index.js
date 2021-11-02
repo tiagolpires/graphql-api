@@ -1,15 +1,19 @@
-const { gql } = require('apollo-server')
+const StudentTypes = require('./Student.js')
 
-const typeDefs = gql`
-    type Student {
-        name: String!
-        email: String!
-        document: String!
-    }
+const types = [];
+const queries = [];
 
-    type Query {
-        students: [Student]
-    }
-`
+const schemas = [StudentTypes];
 
-module.exports = typeDefs
+schemas.forEach((s) => {
+  if(s.types) types.push(s.types);
+  if(s.queries) queries.push(s.queries);
+});
+
+module.exports = `
+  ${types.join('\n')}
+
+  type Query {
+    ${queries.join('\n')}
+  }
+`;
