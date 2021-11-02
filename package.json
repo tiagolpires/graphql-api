@@ -20,5 +20,8 @@
   "dependencies": {
     "apollo-server": "^3.4.0",
     "graphql": "^16.0.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }
