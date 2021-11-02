@@ -1,14 +1,5 @@
-const { ApolloServer, gql } = require('apollo-server')
-
-const typeDefs = gql`
-    type Student {
-        name: String!
-    }
-
-    type Query {
-        students: [Student]
-    }
-`
+const { ApolloServer } = require('apollo-server')
+const typeDefs = require('./schema/typeDefs')
 
 const resolvers = {
     Query: {
