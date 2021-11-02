@@ -12,4 +12,8 @@ module.exports = {
     async createStudent(_, { name, email, document }) {
         return Student.create({ name, email, document })
     },
+
+    async removeStudent(_, { id }) {
+        return Student.findByIdAndRemove(id)
+    },
 }

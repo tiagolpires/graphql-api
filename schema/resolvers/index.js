@@ -7,6 +7,7 @@ module.exports = {
     },
 
     Mutation: {
-        createStudent: StudentResolver.createStudent
+        createStudent: StudentResolver.createStudent,
+        removeStudent: StudentResolver.removeStudent
     }
 }

@@ -14,4 +14,5 @@ module.exports.queries = `
 
 module.exports.mutations = `
     createStudent(name: String!, email: String!, document: String!): Student 
+    removeStudent(id: ID!): Student
 `
