@@ -9,6 +9,7 @@ module.exports.types = `
 
 module.exports.queries = `
     students: [Student]!
+    student(id: ID!): Student
 `
 
 module.exports.mutations = `
