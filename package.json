@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tiagolpires/graphql-api/issues"
   },
-  "homepage": "https://github.com/tiagolpires/graphql-api#readme"
+  "homepage": "https://github.com/tiagolpires/graphql-api#readme",
+  "dependencies": {
+    "graphql": "^16.0.1"
+  }
 }
