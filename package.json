@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tiagolpires/graphql-api#readme",
   "dependencies": {
+    "@graphql-tools/schema": "^8.3.1",
     "apollo-server": "^3.4.0",
     "graphql": "^16.0.1",
     "mongoose": "^6.0.12"
